@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CURD</title>
+</head>
+<body>
+<div class="curd">
+    <div class="head">
+        <h2>CURD</h2>
+        <p>prudct mangment system</p>
+    </div>
+    <div class="input">
+        <input type="text" id="title" placeholder="title">
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <small id="total"></small>
+        </div> 
+        <input type="number"  id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+        <button id="submit">create</button>
+    </div>
+
+    <div class="output">
+        <div class="searchBlock">
+        <input placeholder="search" type="text" name="" id="seacrh">
+        <div class="btnSearch">
+            <button id="searchTitle">search by title</button>
+            <button id="searchCategory">search by category</button>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>titls</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>count</th>
+            <th>category</th>
+            <th>delete</th>
+            <th>update</th>
+    </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
+</div>
+        <script src="./javaScript/main.js"></script>
+    </body>
+    </html>
