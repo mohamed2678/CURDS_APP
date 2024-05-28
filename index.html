@@ -28,11 +28,14 @@
 
     <div class="output">
         <div class="searchBlock">
-        <input placeholder="search" type="text" name="" id="seacrh">
+        <input onkeyup="searchDate(value)" placeholder="search" type="text" name="" id="seacrh">
         <div class="btnSearch">
-            <button id="searchTitle">search by title</button>
-            <button id="searchCategory">search by category</button>
+            <button onclick=" getSearchMood(this.id)" id="searchTitle">search by title</button>
+            <button onclick=" getSearchMood(this.id)" id="searchCategory">search by category</button>
         </div>
+    </div>
+    <div id="deleteAll">
+        
     </div>
     <table>
         <tr>
