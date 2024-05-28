@@ -55,7 +55,7 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     background: rgb(18, 44, 158);
 }
 .btnSearch{
@@ -66,6 +66,9 @@ button:hover{
     width: 45%;
 
 
+}
+#deleteAll{
+    margin: 20px 0;
 }
 table{
     width: 100%;
