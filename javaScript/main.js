@@ -173,6 +173,7 @@ function getSearchMood(id){
         search.style.display = "block"
     }else{
         searchMood = "category"
+        search.style.transition = "0.4s"
         search.style.display = "block"
 
     }
@@ -187,7 +188,7 @@ function searchDate(value){
         if (searchMood == "title"){
             if (datapro[i].title.includes(value.toLowerCase())){
                 table += `<tr>
-                <td>${i}</td>
+                <td>${i+1}</td>
                 <td>${datapro[i].title}</td>
                 <td>${datapro[i].price}</td>
                 <td>${datapro[i].taxes}</td>
@@ -204,7 +205,7 @@ function searchDate(value){
         }else{
             if (datapro[i].category.includes(value.toLowerCase())){
                   table += `<tr>
-                <td>${i}</td>
+                <td>${i+1}</td>
                 <td>${datapro[i].title}</td>
                 <td>${datapro[i].price}</td>
                 <td>${datapro[i].taxes}</td>
