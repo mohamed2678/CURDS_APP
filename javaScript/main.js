@@ -45,7 +45,7 @@ submit.onclick =  function(){
     if (title.value != ''
         && category.value != '' &&
         price.value != '' &&
-        newPro.count <= 100){
+        newPro.count <= 5000){
         if (mood === 'create'){
             // count
             if (newPro.count > 1){
