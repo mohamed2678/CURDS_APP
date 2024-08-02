@@ -72,8 +72,8 @@ submit.onclick =  function(){
         clearInput()
     }
 }else{
-    if (newPro.count >= 100){
-        alert('you cant add more than 100 product')
+    if (newPro.count >= 5000){
+        alert('you cant add more than 5000 product')
         count.style.color = "red"
     }
     alert("you can`t let input empty")
